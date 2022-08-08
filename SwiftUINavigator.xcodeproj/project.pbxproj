@@ -11,6 +11,10 @@
 		7CAA4C8028A0B382005C8892 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA4C7F28A0B382005C8892 /* ContentView.swift */; };
 		7CAA4C8228A0B384005C8892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CAA4C8128A0B384005C8892 /* Assets.xcassets */; };
 		7CAA4C8528A0B384005C8892 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CAA4C8428A0B384005C8892 /* Preview Assets.xcassets */; };
+		7CAA4C9528A0C681005C8892 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = 7CAA4C9428A0C681005C8892 /* Home */; };
+		7CAA4C9728A0C681005C8892 /* Login in Frameworks */ = {isa = PBXBuildFile; productRef = 7CAA4C9628A0C681005C8892 /* Login */; };
+		7CAA4C9928A0C681005C8892 /* Navigator in Frameworks */ = {isa = PBXBuildFile; productRef = 7CAA4C9828A0C681005C8892 /* Navigator */; };
+		7CAA4C9B28A0C681005C8892 /* Registration in Frameworks */ = {isa = PBXBuildFile; productRef = 7CAA4C9A28A0C681005C8892 /* Registration */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CAA4C9728A0C681005C8892 /* Login in Frameworks */,
+				7CAA4C9528A0C681005C8892 /* Home in Frameworks */,
+				7CAA4C9928A0C681005C8892 /* Navigator in Frameworks */,
+				7CAA4C9B28A0C681005C8892 /* Registration in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +53,7 @@
 				7CAA4C8F28A0B832005C8892 /* Navigator */,
 				7CAA4C7C28A0B382005C8892 /* SwiftUINavigator */,
 				7CAA4C7B28A0B382005C8892 /* Products */,
+				7CAA4C9328A0C681005C8892 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +84,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7CAA4C9328A0C681005C8892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +107,12 @@
 			dependencies = (
 			);
 			name = SwiftUINavigator;
+			packageProductDependencies = (
+				7CAA4C9428A0C681005C8892 /* Home */,
+				7CAA4C9628A0C681005C8892 /* Login */,
+				7CAA4C9828A0C681005C8892 /* Navigator */,
+				7CAA4C9A28A0C681005C8892 /* Registration */,
+			);
 			productName = SwiftUINavigator;
 			productReference = 7CAA4C7A28A0B382005C8892 /* SwiftUINavigator.app */;
 			productType = "com.apple.product-type.application";
@@ -345,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7CAA4C9428A0C681005C8892 /* Home */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Home;
+		};
+		7CAA4C9628A0C681005C8892 /* Login */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Login;
+		};
+		7CAA4C9828A0C681005C8892 /* Navigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Navigator;
+		};
+		7CAA4C9A28A0C681005C8892 /* Registration */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Registration;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7CAA4C7228A0B382005C8892 /* Project object */;
 }
