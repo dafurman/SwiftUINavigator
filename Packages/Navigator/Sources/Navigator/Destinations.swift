@@ -13,13 +13,13 @@ public enum HomeDestination: String, Destination, Identifiable {
 }
 
 public enum LoginDestination: String, Destination, Identifiable {
-    case emailPassword
+    case emailLogin
     case forgotPassword
     public var id: String { rawValue }
 }
 
 public enum RegistrationDestination: String, Destination, Identifiable {
-    case newUser
+    case userRegistration
     public var id: String { rawValue }
 }
 
