@@ -1,15 +1,18 @@
 // Created 8/7/22
 
 import SwiftUI
+import Navigator
 
 struct HomeView: View {
+    @EnvironmentObject private var navigator: Navigator
+
     var body: some View {
         NavigationView {
             Text("Hello, Home!")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button {
-                            // TODO: Go to Settings
+                            navigator.navigate(to: HomeDestination.settings)
                         } label: {
                             Image(systemName: "gearshape.fill")
                         }
